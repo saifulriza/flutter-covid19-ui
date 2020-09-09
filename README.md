@@ -1,8 +1,8 @@
-# design_3
+<h1>Flutter Covid19 UI </h1>
+<img src="https://user-images.githubusercontent.com/45083824/92552890-e1269700-f28b-11ea-8aa4-165f538fb3f4.png" alt="drawing" style="width:200px;"/>
+<img src="https://user-images.githubusercontent.com/45083824/92552893-e2f05a80-f28b-11ea-9db4-1a2d1c81e6ed.png" alt="drawing" style="width:200px;"/>
 
-![Screenshot_1599623720](https://user-images.githubusercontent.com/45083824/92552890-e1269700-f28b-11ea-8aa4-165f538fb3f4.png =300x)
-![Screenshot_1599623731](https://user-images.githubusercontent.com/45083824/92552893-e2f05a80-f28b-11ea-9db4-1a2d1c81e6ed.png =300x)
-
+sumber desain https://dribbble.com/shots/11015463-Covid-19-App-Free
 ## Getting Started
 
 This project is a starting point for a Flutter application.
