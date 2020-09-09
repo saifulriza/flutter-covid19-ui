@@ -74,7 +74,7 @@ class _StatisticState extends State<Statistic> {
                     width: 360,
                     height: 49,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(25),
                       color: Color(0xff6c65ab),
                     ),
                     child: Container(
