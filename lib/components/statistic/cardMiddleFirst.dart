@@ -41,7 +41,7 @@ class CardMiddleFirst extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 10, bottom: 10),
+            padding: EdgeInsets.only(left: 10),
             width: 175,
             height: 100,
             decoration: BoxDecoration(
