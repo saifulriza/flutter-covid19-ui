@@ -1,7 +1,4 @@
-on: 
-  push:
-    tags:
-      - 'v*.*.*'
+on: push
 name: Build and Release apk
 jobs:
   build:
@@ -20,18 +17,10 @@ jobs:
     - run: flutter build apk --release --split-per-abi
     - run: flutter build appbundle
     - name: Create a Release in GitHub
-      id: vars
-      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-    - name: Check output
-      env:
-        RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
-        run: |
-          echo $RELEASE_VERSION
-          echo ${{ steps.vars.outputs.tag }}
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/app-release.aab"
         token: ${{ secrets.GH_TOKEN }}
-        tag: ${{ steps.vars.outputs.tag }}
+        tag: ${{ steps.version.outputs.content }}
         commit: ${{ github.sha }}
         
