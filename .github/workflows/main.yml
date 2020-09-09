@@ -11,11 +11,7 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-        flutter-version: '1.7.8+hotfix.4'
+        flutter-version: '1.9.1+hotfix.6'
     - run: flutter pub get
-    - run: flutter build apk --debug --split-per-abi
-    - name: Create a Release APK
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "build/app/outputs/apk/debug/*.apk"
-        token: ${{ secrets.GH_TOKEN }}
+    - run: flutter test
+    - run: flutter build apk
