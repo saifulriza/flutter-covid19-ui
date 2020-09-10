@@ -18,13 +18,13 @@ jobs:
     - name: Save aplikasi
       uses: actions/upload-artifact@v2
       with:
-        name: Aplikasi
-        path: build/app/outputs/flutter-apk
+        name: app-armeabi-v7a-release.apk
+        path: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
     - run: flutter build appbundle
     - name: Save appbundle
       uses: actions/upload-artifact@v2
       with:
-        name: Bundle
-        path: build/app/outputs/bundle/release
+        name: app-release.aab
+        path: build/app/outputs/bundle/release/app-release.aab
 
         
